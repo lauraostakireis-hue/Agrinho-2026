@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do Campo ao Copo: A Jornada do Malte em Guarapuava</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <div class="barra-acessibilidade" role="complementary" aria-label="Ferramentas de Acessibilidade">
+        <button id="btn-reduzir" aria-label="Diminuir tamanho do texto">A-</button>
+        <button id="btn-aumentar" aria-label="Aumentar tamanho do texto">A+</button>
+        <button id="btn-contraste" aria-label="Alternar alto contraste">🌓 Alto Contraste</button>
+    </div>
+
+    <header>
+        <div class="container header-conteudo">
+            <div class="logo">🌾 Jornada do Malte</div>
+            <button id="btn-menu-mobile" aria-label="Abrir menu de navegação" aria-expanded="false">☰</button>
+            <nav id="menu-principal">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#jornada">A Jornada</a></li>
+                    <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+                    <li><a href="#quiz">Quiz</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h1>Do Campo ao Copo: A Jornada do Malte em Guarapuava</h1>
+                <p>Descubra como a tecnologia, o agronegócio e a sustentabilidade se unem na maior produtora de malte do país.</p>
+            </div>
+        </section>
+
+        <section id="jornada" class="container">
+            <h2>A Cadeia Produtiva da Cevada</h2>
+            <div class="carrossel" role="region" aria-label="Galeria de imagens da produção">
+                <div class="carrossel-slides">
+                    <div class="slide ativo">
+                        <img src="img/Campo.png" alt="Plantação de cevada verde sob o sol em Guarapuava, representando o manejo sustentável do solo.">
+                        <p class="legenda">1. O Cultivo: Tecnologia e cuidado com o solo no campo.</p>
+                    </div>
+                    <div class="slide">
+                        <img src="img/Malte.png" alt="Interior da indústria moderna mostrando o processo de beneficiamento e transformação da cevada em malte.">
+                        <p class="legenda">2. A Indústria: Transformação da cevada em malte com alta tecnologia.</p>
+                    </div>
+                    <div class="slide">
+                        <img src="img/Cidade.png" alt="Integração urbana com transporte logístico, simbolizando o malte chegando às cidades e movimentando a economia.">
+                        <p class="legenda">3. A Cidade: O impacto econômico e o consumo consciente conectando o campo à vida urbana.</p>
+                    </div>
+                </div>
+                <button class="nav-carrossel anterior" aria-label="Slide anterior">❮</button>
+                <button class="nav-carrossel proximo" aria-label="Próximo slide">❯</button>
+            </div>
+        </section>
+
+        <section id="sustentabilidade" class="fundo-alternativo">
+            <div class="container">
+                <h2>Compromisso com o Futuro</h2>
+                <div class="grade-sustentavel">
+                    <article class="cartao-expansivel">
+                        <button class="topo-cartao" aria-expanded="false">
+                            <h3>🌱 Manejo Responsável do Solo</h3>
+                            <span class="icone-status">+</span>
+                        </button>
+                        <div class="conteudo-cartao" aria-hidden="true">
+                            <p>Uso de rotação de culturas e plantio direto para proteger os nutrientes da terra e evitar a erosão em Guarapuava.</p>
+                        </div>
+                    </article>
+
+                    <article class="cartao-expansivel">
+                        <button class="topo-cartao" aria-expanded="false">
+                            <h3>💧 Uso Consciente da Água</h3>
+                            <span class="icone-status">+</span>
+                        </button>
+                        <div class="conteudo-cartao" aria-hidden="true">
+                            <p>Sistemas modernos de irrigação controlada e monitoramento climático evitam o desperdício desse recurso vital.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz" class="container">
+            <h2>Desafio do Conhecimento</h2>
+            <p>Teste seus conhecimentos sobre a produção sustentável do malte!</p>
+            <div id="container-quiz">
+                <div id="pergunta-bloco">
+                    <h3 id="quiz-pergunta">Carregando pergunta...</h3>
+                    <div id="quiz-opcoes" class="lista-opcoes"></div>
+                </div>
+                <button id="btn-proxima-pergunta" class="escondido">Próxima Pergunta</button>
+                <div id="quiz-resultado" class="escondido"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Concurso Agrinho. Desenvolvido em Guarapuava - PR.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
